@@ -117,10 +117,10 @@
         var days = Math.floor(t / (1000 * 60 * 60 * 24));
         return {
           'total': t
-          , 'days': days
-          , 'hours': hours
-          , 'minutes': minutes
-          , 'seconds': seconds
+          , 'days': Math.abs(days)
+          , 'hours': Math.abs(hours)
+          , 'minutes': Math.abs(minutes)
+          , 'seconds': Math.abs(seconds)
         };
       }
 
@@ -138,7 +138,7 @@
           minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
           secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
           if (t.total <= 0) {
-            clearInterval(timeinterval);
+            daysSpan.innerHTML = t.days - 1;
           }
         }
         updateClock();
