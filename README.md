@@ -1,9 +1,9 @@
-# Personal Sites for All
+# A tribute
 
-The purpose of this repo is just to give each of our internal employees a site where we can add some personal humors.
+This repo is the code behind matt.isprettymuchtheworst.com. Hosted by github pages, any changes you commit in a PR will go directly live once merged.
 
-## How does it work
+## What is this
 
-Virtual hosts are setup on the server representing each subdirectory. The directory 'who' just contains an html file that redirects to another directory.
+A collection of fun memories with our beloved coworkers.
 
-See each one live at folder.isprettymuchtheworst.com
+See it live at matt.isprettymuchtheworst.com
